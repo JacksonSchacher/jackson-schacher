@@ -1,1 +1,13 @@
-<p>applications works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let app of applications" class="col-lg-6">
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="{{app.heroImg}}" alt="{{app.title}}">
+        <div class="card-img-overlay">
+          <h5 class="card-title">{{app.title}}</h5>
+          <p class="card-text">{{app.shortDesc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

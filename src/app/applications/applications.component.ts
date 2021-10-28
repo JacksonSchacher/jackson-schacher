@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./applications.component.scss']
 })
 export class ApplicationsComponent implements OnInit {
-
+  applications = [
+    {
+      title: 'Tripr',
+      shortDesc: 'Organizational tool to help plan trips with your friends',
+      heroImg: 'https://i.postimg.cc/x1XyphRb/test-Tripr-Img.png'
+    },
+    {
+      title: 'BugTracker',
+      shortDesc: 'Create, track, and close development bugs',
+      heroImg: 'https://www.lambdatest.com/blog/wp-content/uploads/2018/08/534-x-300-20-1.jpg'
+    }
+  ]
   constructor() { }
 
   ngOnInit(): void {
