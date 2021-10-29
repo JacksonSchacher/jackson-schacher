@@ -1,0 +1,29 @@
+main {
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(102,45,145,1) 0%, rgba(41,171,226,1) 100%);
+}
+.palms {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+}
+.overlay-title {
+  position: absolute;
+  z-index: 3;
+  top: 25vh;
+  width: 50vw;
+}
+.nameImg {
+  width: 90vw;
+}
+.devDesImg {
+  width: 40vw;
+}
+.ui-logo {
+  width: 10vw;
+  height: auto;
+}
+.codeworks-logo {
+  width: 10vw;
+  height: auto;
+}
