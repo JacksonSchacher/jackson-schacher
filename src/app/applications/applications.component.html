@@ -8,6 +8,9 @@
             <h5 class="title"><a class="card-title" >{{app.title}}</a></h5>
             <p class="card-text">{{app.shortDesc}}</p>
           </div>
+          <div class="card-footer row bg-light justify-content-around">
+            <div *ngFor="let icon of app.icons" class="col-4 icon-div"><img class="icon" src="{{icon}}" alt=""></div>
+          </div>
         </div>
       </div>
     </div>

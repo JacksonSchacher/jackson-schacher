@@ -21,6 +21,13 @@ a {
   border-radius: 20px;
   width: fit-content;
 }
+.icon {
+  width: auto;
+  height: 50px;
+}
+.icon-div {
+  display: contents;
+}
 .card-text {
   background-color: rgba(0, 0, 0, 0.25);
   padding: .5rem;

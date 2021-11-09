@@ -10,13 +10,13 @@ export class DesignComponent implements OnInit {
     {
       title: 'Theatre Poster',
       shortDesc: 'Printed posters done for a production in Chicago',
-      imgUrl: 'https://via.placeholder.com/150',
+      imgUrl: '../assets/1x/GrizzlyPoster.jpg',
       // Update this to include actual icons
       icons: 'Illustrator, InDesign'
     },
     {
-      title: 'Concept Art',
-      shortDesc: 'Images ',
+      title: 'Theme Park Layout Design',
+      shortDesc: 'Designed a theme park layout, working with multiple teams to build a cohesive look and blending styles between different themed lands',
       imgUrl: 'https://via.placeholder.com/150',
       icons: 'Photoshop, Zbrush'
     },
@@ -31,6 +31,11 @@ export class DesignComponent implements OnInit {
       shortDesc: 'Animation made for a redesigned wing of the hospital in Lewiston, Idaho',
       vidUrl: './assets/1x/SJRMC.mp4',
       icons: 'video'
+    },
+    {
+      title: 'Tripr Application Design Documents',
+      shortDesc: 'Mocked up designs using Figma to guide my team through style and functionality of app',
+      imgUrl: "../assets/1x/Tripr-Figma.png"
     },
     {
       title: 'Augmented Reality Application Mock',

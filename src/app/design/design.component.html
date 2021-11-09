@@ -1,11 +1,12 @@
 <div class="container-fluid">
-  <div class="row" data-masonry= '{"percentPosition": true }'>
-    <div *ngFor="let design of designs" class="col-lg-4">
-      <div *ngIf="design.imgUrl" class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{design.imgUrl}}" alt="{{design.title}}">
-        <div class="card-body">
-          <h6 class="card-text">{{design.title}}</h6>
-          <p class="card-text">{{design.shortDesc}}</p>
+  <main class="pt-4">
+    <div class="d-inline-block row masonry-columns">
+      <div *ngFor="let design of designs" class="">
+        <div *ngIf="design.imgUrl" class="card">
+          <img class="card-img-top" src="{{design.imgUrl}}" alt="{{design.title}}">
+          <div class="card-body">
+            <h6 class="card-text">{{design.title}}</h6>
+            <p class="card-text">{{design.shortDesc}}</p>
         </div>
       </div>
       <div *ngIf="design.vidUrl" class="card">
@@ -19,4 +20,5 @@
       </div>
     </div>
   </div>
+</main>
 </div>

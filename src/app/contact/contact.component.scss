@@ -1,6 +1,12 @@
 .contact {
   height: 100vh;
   background: linear-gradient(45deg, rgba(41,171,226,1) 0%, rgba(102,45,145,1) 100%);
+  animation: grad 10s ease infinite;
+  background-size: 400% 400%;
+}
+main {
+  width: 80vw;
+  margin: auto;
 }
 .profile-pic {
   width: 20vw;
@@ -9,11 +15,20 @@
   border-radius: 20px;
   margin: 2rem;
 }
+.palms {
+  position: absolute;
+  bottom: -8vh;
+  right: 0;
+}
+.row {
+  z-index: 25;
+  position: relative;
+}
 summary {
-  background-color: #f2f2f241;
+  background-color: #f2f2f27e;
 }
 .col {
-  background-color: #f2f2f241;
+  background-color: #f2f2f27e;
   margin: 2rem;
   padding: .5rem 0;
   border-radius: 20px;
@@ -24,4 +39,16 @@ a {
 }
 .col:hover {
   background-color: #f2f2f2b9;
+}
+
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

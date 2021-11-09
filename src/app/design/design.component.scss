@@ -1,6 +1,41 @@
 .card {
-  width: 30vw;
-  height: auto;
-  padding: 1rem;
-  margin: .5rem;
+  max-width: fit-content;
+}
+main {
+  margin: auto;
+}
+video {
+  width: 100%;
+  border-radius: 20px;
+}
+img {
+  border-radius: 20px;
+}
+.container-fluid {
+  background: linear-gradient(45deg, rgba(41,171,226,1) 0%, rgba(102,45,145,1) 100%);
+  animation: grad 10s ease infinite;
+  background-size: 400% 400%;
+}
+.masonry-columns {
+  columns: 3 150px;
+  column-gap: 1.5rem;
+  flex-flow: column;
+  div {
+    display: inline-block;
+    max-width: 30rem;
+    border-radius: 20px;
+    margin: .5rem 0;
+  }
+}
+
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
