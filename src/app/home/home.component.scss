@@ -6,24 +6,54 @@ main {
   position: relative;
   object-fit: cover;
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 .overlay-title {
   position: absolute;
   z-index: 3;
   top: 25vh;
-  width: 50vw;
+}
+.overlay-creds {
+  margin: 0;
+  position: relative;
+  bottom: 11rem;
 }
 .nameImg {
   width: 90vw;
+  animation: fadeInLeft 2s;
 }
 .devDesImg {
   width: 40vw;
+  animation: fadeInUp 3s;
 }
 .ui-logo {
-  width: 10vw;
+  width: 5vw;
   height: auto;
 }
 .codeworks-logo {
-  width: 10vw;
+  width: 5vw;
   height: auto;
+}
+.d-contents {
+  display: contents;
+}
+.skills {
+  border-top: 10px solid black;
+  background-color: #662d91;
+}
+li {
+  background-color: transparent;
+}
+
+@keyframes fadeInLeft {
+  0% {opacity: 0; transform: translateX(-5rem);}
+  50% {opacity: .75;}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(5rem);}
+  50% {opacity: .25;}
+  100% {opacity: 1; transform: translateY(0);}
 }

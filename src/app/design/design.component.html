@@ -9,7 +9,7 @@
         </div>
       </div>
       <div *ngIf="design.vidUrl" class="card">
-        <video src="{{design.vidUrl}}" class="bs-card-video" autoplay="" loop=""></video>
+        <video src="{{design.vidUrl}}" class="bs-card-video" autoplay="" loop="" [muted]="'muted'"></video>
         <div class="card-body">
           <h5 class="card-title">{{design.title}}</h5>
           <p class="card-text">

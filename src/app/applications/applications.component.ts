@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-applications',
@@ -11,22 +10,24 @@ export class ApplicationsComponent implements OnInit {
     {
       title: 'Tripr',
       shortDesc: 'Organizational tool to help plan trips with your friends',
-      heroImg: 'https://i.postimg.cc/x1XyphRb/test-Tripr-Img.png'
+      heroImg: '../assets/1x/tripr-main.png'
     },
     {
       title: 'BugTracker',
       shortDesc: 'Create, track, and close development bugs',
       heroImg: 'https://www.lambdatest.com/blog/wp-content/uploads/2018/08/534-x-300-20-1.jpg'
+    },
+    {
+      title: 'BeerFinder',
+      shortDesc: 'Find your next brew',
+      heroImg: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/01/17/istock-1060456922.jpg?width=1200'
+    },
+    {
+      title: 'Collections',
+      shortDesc: 'Post images and add posts to collections',
+      heroImg: 'https://www.adweek.com/wp-content/uploads/2021/05/PinterestPinGridHero2.jpg'
     }
   ]
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-  ) { }
-
-  // goToAppDetails(appTitle: string) {
-  //   this.router.navigate(['application/details/' + appTitle], {relativeTo: this.route});
-  // }
   ngOnInit(): void {
   }
 

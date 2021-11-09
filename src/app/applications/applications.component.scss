@@ -1,0 +1,10 @@
+.card {
+  height: 50vh;
+  width: 30vw;
+  margin: 1rem;
+}
+.card-img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}

@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <div class="row">
-    <div *ngFor="let app of applications" class="col-lg-6">
+    <div *ngFor="let app of applications" class="d-flex col-lg-6 justify-content-center">
       <div class="card bg-dark text-white">
         <img class="card-img selectable" src="{{app.heroImg}}" alt="{{app.title}}">
         <div class="card-img-overlay">
-          <h5 class="card-title">{{app.title}}</h5>
+          <h5><a class="card-title" [routerLink]="['/app-details', app.title]" routerLinkActive="router-link-active">{{app.title}}</a></h5>
           <p class="card-text">{{app.shortDesc}}</p>
         </div>
       </div>

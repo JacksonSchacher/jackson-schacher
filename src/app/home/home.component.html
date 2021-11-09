@@ -1,24 +1,38 @@
 <main class="container-fluid w-100 p-0">
   <div class="palms">
-    <img  src="assets/1x/palms.png" alt="Palm Fronds">
+    <img style="width: inherit;" src="assets/1x/palms.png" alt="Palm Fronds">
   </div>
-    <div class="row justify-content-center overlay-title">
-      <div class="col-12">
+    <div class="row justify-content-center overlay-title w-100">
+      <div class="col-12 d-contents">
       <img class="nameImg" src="assets/1x/nameImg.png" alt="Jackson Schacher">
     </div>
-    <div class="col-12">
+    <div class="col-12 d-contents">
       <img class="devDesImg mt-4" src="assets/1x/dev+design.png" alt="Developer + Designer">
     </div>
   </div>
-  <div class="w-100 row justify-content-around overlay-creds">
-    <div class="col-5">
+  
+</main>
+<div class="skills justify-content-center">
+  <div class="w-100 row justify-content-around pt-2">
+    <div class="col-5 d-grid justify-content-center">
 
       <img class="ui-logo" src="assets/ui-seal-black.svg" alt="University of Idaho Logo">
-      <h4>B.S. Virtual Technology and Design</h4>
+      <h6 class="pt-2 ps-2">B.S. Virtual Technology and Design</h6>
     </div>
-    <div class="col-5">
+    <div class="col-5 d-grid justify-content-center">
       <img class="codeworks-logo" src="https://codeworks.blob.core.windows.net/public/assets/img/cw-logo-circle.png" alt="CodeWorks Logo">
-      <h4>Full-Stack Development Certification</h4>
+      <h6 class="pt-2 ps-2">Full-Stack Development Certification</h6>
     </div>
-    </div>
-</main>
+  </div>
+  <div class="container-fluid">
+    <h3>Skills</h3>
+    <ul class="list-group row flex-row justify-content-around">
+      <li *ngFor="let skill of skills" class="list-group-item text-light col-4 text-center">
+
+        <h6>
+          <img src="{{skill.icon}}" alt="{{skill.name}}">  {{skill.name}}
+        </h6>
+      </li>
+    </ul>
+  </div>
+</div>
