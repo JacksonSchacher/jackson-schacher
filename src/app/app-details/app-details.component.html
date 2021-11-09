@@ -1,1 +1,36 @@
-<p>app-details works!</p>
+<div class="container-fluid">
+  <div class="row title">
+    <h1>{{app.title}}</h1>
+    <h4>{{app.description}}</h4>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <img class="app-img" src="{{app.img1}}" alt="{{app.title}}">
+    </div>
+    <div class="d-flex col-6 align-items-center">
+      <h4>{{app.info1}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 d-flex align-items-center">
+      <h4>{{app.info2}}</h4>
+    </div>
+    <div class="col-6">
+      <img class="app-img" src="{{app.img2}}" alt="{{app.title}}">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <img class="app-img" src="{{app.img3}}" alt="{{app.title}}">
+    </div>
+    <div class="col-6 d-flex align-items-center">
+      <h4>{{app.info3}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3>Github: <h4>{{app.github}}</h4></h3>
+      <h3>Website: <h4>{{app.website}}</h4></h3>
+    </div>
+  </div>
+</div>
