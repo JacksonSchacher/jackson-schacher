@@ -1,13 +1,16 @@
-<div class="container-fluid">
-  <div class="row">
-    <div *ngFor="let app of applications" class="d-flex col-lg-6 justify-content-center">
-      <div class="card bg-dark text-white">
-        <img class="card-img selectable" src="{{app.heroImg}}" alt="{{app.title}}">
-        <div class="card-img-overlay">
-          <h5 class="title"><a class="card-title" [routerLink]="['/app-details', app.title]" routerLinkActive="router-link-active">{{app.title}}</a></h5>
-          <p class="card-text">{{app.shortDesc}}</p>
+<main class="applications">
+  <div class="container-fluid">
+    <div class="row">
+      <div *ngFor="let app of applications" class="d-flex col-lg-6 justify-content-center">
+        <div class="card bg-dark text-white" [routerLink]="['/app-details', app.title]" routerLinkActive="router-link-active">
+          <img class="card-img selectable" src="{{app.heroImg}}" alt="{{app.title}}">
+          <div class="card-img-overlay">
+            <h5 class="title"><a class="card-title" >{{app.title}}</a></h5>
+            <p class="card-text">{{app.shortDesc}}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</main>
+  

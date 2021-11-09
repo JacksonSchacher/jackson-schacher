@@ -1,13 +1,29 @@
 main {
   height: 100vh;
   background: linear-gradient(45deg, rgba(102,45,145,1) 0%, rgba(41,171,226,1) 100%);
+  background-size: 400% 400%;
+  animation: grad 10s ease infinite;
+}
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .palms {
   position: relative;
   object-fit: cover;
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
+  width: fit-content;
+}
+.palms > img {
+  width: 98vw;
 }
 .overlay-title {
   position: absolute;
