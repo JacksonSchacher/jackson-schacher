@@ -28,7 +28,7 @@ export class AppDetailsService {
     img3: "",
     info3: "",
     github: "https://github.com/JacksonSchacher/BugTracker_v3",
-    website: ""
+    website: "https://js-bug-tracker.herokuapp.com/#/"
   },
   {
     title: "BeerFinder",

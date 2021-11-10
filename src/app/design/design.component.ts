@@ -17,7 +17,7 @@ export class DesignComponent implements OnInit {
     {
       title: 'Theme Park Layout Design',
       shortDesc: 'Designed a theme park layout, working with multiple teams to build a cohesive look and blending styles between different themed lands',
-      imgUrl: 'https://via.placeholder.com/150',
+      imgUrl: '../assets/1x/themeparklayout.png',
       icons: 'Photoshop, Zbrush'
     },
     {
